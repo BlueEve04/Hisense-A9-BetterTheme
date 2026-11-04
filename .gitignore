@@ -1,0 +1,25 @@
+# Build products and private material must never be committed
+*.apk
+*.apks
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# apktool / decompiled trees
+decoded/
+build/
+build_*/
+theme/
+device_apks/
+
+# local analysis
+_inspect/
+screens/
+*.db
+*.db-journal
+
+# python
+__pycache__/
+*.pyc
+.venv/

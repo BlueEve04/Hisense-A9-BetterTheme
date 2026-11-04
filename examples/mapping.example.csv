@@ -1,0 +1,7 @@
+# package,drawable
+# drawable 对应 icons-dir 里的 <drawable>.png
+com.tencent.mm,weixin.icon
+com.taobao.taobao,taobao.icon
+bin.mt.plus.canary,mtguanliqi.icon
+moe.shizuku.privileged.api,shizuku
+org.koreader.launcher,koreader
