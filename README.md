@@ -3,8 +3,9 @@
 把 ADW / Nova 格式的图标包（`appfilter.xml` + PNG）批量注入海信 A9 的
 Vision 主题 APK（`com.hmct.theme.*`），让桌面适配更多第三方应用图标。
 
-> **本仓库只包含脚本、文档和少量预览图。**
+> **仓库源码只包含脚本、文档和少量预览图。**
 > 不包含海信主题 APK、厂商资源、图标包素材、签名密钥或任何用户数据。
+> 改版 APK 作为 Release 附件提供，仅限个人设备使用（见下方「发布版」）。
 
 ## 原理
 
@@ -23,6 +24,14 @@ if theme.predefined_app_pkg_list 包含 <package>:
 2. 包名出现在 `res/values/arrays.xml` 的 `predefined_app_pkg_list` 里
 
 详细逆向分析见 [docs/theme-internals.md](docs/theme-internals.md)。
+
+## 发布版
+
+- Release 页面：<https://github.com/BlueEve04/Hisense-A9-BetterTheme/releases/latest>
+- 附件 APK：`Hisense-A9-BetterTheme-7.01.001-mod5.apk`
+- 包名：`com.hmct.theme.elegant.mod`，主题列表显示为「儒雅·增强」
+- 安装后到主题 App 里选择「儒雅·增强」；如果之前装过旧版改版主题，先卸载再装
+- **APK 内含海信主题原始资源和图标包素材，仅供个人设备本地使用，不在 MIT 许可范围内，请勿再分发**
 
 ## 快速开始
 
@@ -130,7 +139,7 @@ previews/
 
 本项目与海信（Hisense）无关，仅供个人学习和对自己有权使用的主题进行
 本地化定制。请勿用本工具分发厂商主题 APK、图标包素材或任何受版权/商标
-保护的内容。`previews/` 中的图标仅作适配效果示例，版权归各自权利人所有。
+保护的内容。`previews/` 中的图标和 Release 附件 APK 仅作适配效果示例，版权归各自权利人所有；Release 附件不在 MIT 许可范围内。
 
 ## License
 
